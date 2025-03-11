@@ -1,0 +1,22 @@
+{
+  "name": "grunt-scss-to-css",
+  "version": "1.0.0",
+  "description": "Convert SCS to CSS using grunt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint 'dist/**/*.css'"
+  },
+  "keywords": [
+    "grunt",
+    "scss",
+    "css"
+  ],
+  "author": "xzx",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
