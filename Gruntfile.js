@@ -4,16 +4,16 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'dist/css/output.css': 'src/scss/index.scss'
+          'dist/css/output.css': 'src/scss/index.scss'  // src/scss/index.scss文件编译后输出到dist/css/output.css文件
         }
       }
     },
     watch:{
       scripts:{
-        files:["src/css/*.scss"],
-        tasks:["sass"],
+        files:["src/scss/*.scss"],  // 监控文件夹下的scss文件
+        tasks:["sass"],  // 监控到文件变化后，执行sass任务
         options:{
-          spawn:true  //变量更新，true指全量更新，就是一处css改变，所有内容都重新编译构建
+          spawn: false
         }
       }
     },
